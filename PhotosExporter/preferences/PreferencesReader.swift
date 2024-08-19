@@ -90,6 +90,7 @@ class PreferencesReader {
                     }
                     plan.exportCurrent = planDict["exportCurrent"]?.bool
                     plan.exportOriginals = planDict["exportOriginals"]?.bool
+                    plan.exportDerived = planDict["exportDerived"]?.bool
                     plan.convertHeic2Jpg = planDict["convertHeic2Jpg"]?.bool
 
                     if let plan = plan as? FileSystemExportPlan {
